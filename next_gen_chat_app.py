@@ -22,7 +22,7 @@ st.info("You can ask question related to this documents https://drive.google.com
 @st.cache_resource(show_spinner=False)
 def load_data():
     with st.spinner(text="Loading docs"):
-        reader = SimpleDirectoryReader(input_dir="data/",
+        reader = SimpleDirectoryReader(input_dir="./data/",
                                        recursive=True)
         docs = reader.load_data()
         service_context = ServiceContext.from_defaults(llm=OpenAI(model="gpt-4-1106-preview", temperature=0.5,
