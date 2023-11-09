@@ -9,8 +9,7 @@ from llama_index import SimpleDirectoryReader
 
 st.set_page_config(page_title="LlamaIndex Test", layout="centered",
                    initial_sidebar_state="auto", menu_items=None)
-# openai.api_key = "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"
-openai.api_key = "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"
+openai.api_key = st.secrets["openai_key"]
 st.title("ChatBot Test")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
