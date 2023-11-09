@@ -1,4 +1,4 @@
-llama-index=0.8.63.pot2
+llama-index==0.8.63.pot2
 openai
 pypdf
 pypdf2
