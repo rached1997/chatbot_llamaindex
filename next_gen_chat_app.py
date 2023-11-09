@@ -17,7 +17,7 @@ if "messages" not in st.session_state.keys():  # Initialize the chat messages hi
         {"role": "assistant", "content": "Ask me a question about Streamlit's open-source Python library!"}
     ]
 
-st.info("You can ask question related to this documents https://drive.google.com/drive/folders/1-2pMCa7AeBnzUr2BuLg2tRjMmyTg6GZM?usp=drive_link")
+st.info("You can ask question related to this documents https://drive.google.com/drive/folders/1-2pMCa7AeBnzUr2BuLg2tRjMmyTg6GZM?usp=sharing")
 
 @st.cache_resource(show_spinner=False)
 def load_data():
